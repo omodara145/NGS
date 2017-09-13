@@ -1,4 +1,4 @@
-@font-face { font-family: Raleway; src: url('Raleway-Regular.ttf'); }
+@font-face { font-family: raleway; src: url('Raleway-Regular.ttf'); }
 body {
   overflow-x: hidden;
 
@@ -8,14 +8,6 @@ p {
   font-size: 18px;
   line-height: 1.75;
   font-family: Raleway;
-}
-
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-  outline: none;
 }
 
 h1,
@@ -125,6 +117,7 @@ h6 {
   }
 }
 
+
 /* Carousel Caption */
 .heading h1{
     position: absolute;
@@ -143,7 +136,7 @@ h6 {
   position: absolute;;
   background-color: #26C281;
   margin-left: 15%;
-  margin-top: -23%;
+  margin-top: -21%;
   border: none;
 }
 
@@ -152,15 +145,7 @@ h6 {
   color: #26C281;
 }
 
-.carousel-caption h3{
-  font-family: 'raleway';
-  font-size: 30px;
-}
 
-.carousel-caption p{
-  font-family: 'raleway';
-  font-size: 20px;
-}
 /* Carousel Control */
 .carousel-control{
   margin-top: 25%;
@@ -169,7 +154,57 @@ h6 {
 
 /* SPACING BETWEEN SECTIONS */
 .section-heading{
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+.section-subheading{
+  font-family: 'raleway';
+}
+
+/* -----======================= Announcemnts ========================----- */
+#announcements{
+  margin-bottom: 15px;
+}
+
+#announcements img{
+    width: 160px;
+    height: 100px;
+    border: 1px solid #eaeaea;
+    padding: 2px;
+}
+
+#announcements .carousel-indicators{
+  position: relative;
+  margin-left: 10vw;
+}
+
+#announcements .carousel-indicators li{
+  background-color: #fff;
+  border-color: #26C281;
+  border-radius: 0px;
+}
+
+#announcements .carousel-indicators li.active{
+  background-color: #26C281;
+}
+
+#announcements h3, #announcements p{
+  font-family: 'raleway';
+}
+
+#announcements h3{
+  color: #000;
+}
+
+#announcements p{
+ color: #222;
+ margin-top: -10px;
+ font-size: 15px;
+}
+
+#announcement{
+  background-color: #f6f6f6;
+  padding: 15px;
 }
 
 hr{
@@ -179,7 +214,157 @@ hr{
   background-color: #26C281;
 }
 
-/*  A B O U T */
+/* -----======================= End Of Announcemnts ========================----- */
+
+/* -----======================= News and Events ========================----- */
+#news hr{
+  background-color: #26C281;
+  margin-left: 0%;
+}
+
+#news_and_events img{
+  width: 270px;
+  height: 160px;
+}
+
+.news-category{
+  font-family: 'raleway';
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+  border-bottom: 1px solid #f6f6f6;
+  border-top: 1px solid #f6f6f6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 20px auto;
+}
+
+.news-label{
+  font-family: Raleway;
+  font-size: 22px;
+  color: #000;
+  text-align: left;
+  margin-top: 10px;
+}
+
+ .news-text{
+  margin: 10px auto;
+  font-family: 'raleway';
+  font-size: 14px;
+  color: #444;
+}
+
+#news_and_events .btn{
+  background-color: #26C281;
+  color: #fff;
+  border: none;
+}
+
+#news_and_events .btn:hover{
+  background-color: #000;
+}
+
+#news_and_events{
+  margin-bottom: 30px;
+}
+
+/* ======================= Featured Events ================================== */
+#featured-events hr{
+  background-color: #26C281;
+  margin-left: 10%;
+}
+
+#featured-events .event-coloured{
+  background-color: #f6f6f6;
+  padding: 10px;
+}
+
+#featured-events .event-white{
+  padding: 10px;
+}
+
+#featured-events h4{
+  font-size: 24px;
+  color: #26C281;
+  font-family: 'raleway';
+}
+
+#featured-events p{
+  font-size: 14px;
+  color: #222;
+}
+/* ===================== End Of Featured Events ============================= */
+
+/* ============================= Deadlines ================================== */
+
+#deadlines hr{
+  background-color: #26C281;
+  margin-left: 0%;
+}
+
+#deadlines .carousel-indicators{
+  position: relative;
+  margin-left: 5vw;
+}
+
+#deadlines .carousel-indicators li{
+  background-color: #fff;
+  border-color: #26C281;
+  border-radius: 0px;
+}
+
+#deadlines .carousel-indicators li.active{
+  background-color: #26C281;
+}
+
+#deadlines h3, #announcements p{
+  font-family: 'raleway';
+}
+
+#deadlines h4{
+  color: #000;
+}
+
+#deadlines p{
+ color: #222;
+ margin-top: -10px;
+ font-size: 12px;
+}
+
+#deadlines{
+  background-color: #f6f6f6;
+  padding: 15px;
+}
+/* =========================== End Of Deadlines ============================= */
+
+/* ========================== YouTube Frame ================================= */
+.youtube-frame{
+  background-color: #000;
+  height: 300px;
+}
+
+.youtube-frame i{
+  font-size: 70px;
+  color: red;
+  margin-top: 20%;
+  margin-left: 40%;
+}
+
+.video-title{
+  text-align: center;
+  margin-bottom: 25px;
+}
+/* ======================== End Of YouTube Frame ============================ */
+
+
+
+
+
+
+/* ==================================================== About Page ===============================================*/
+#about{
+  margin-top: 80px;
+}
 .what-heading, .mission-heading, .vision-heading {
   margin: 15px 0;
   text-transform: none;
@@ -194,7 +379,90 @@ hr{
   color: #000;
 }
 
-/* EXCOS */
+.research-theme{
+  border: 1px solid #f6f6f6;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.research-theme img{
+  margin-bottom: 10px;
+}
+
+.research-theme-label{
+  color: #000;
+  font-family: 'raleway';
+  font-size: 20px;
+  text-align: center;
+}
+
+.about-research-theme{
+  color: #222;
+  font-family: 'raleway';
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+
+.research-theme .btn{
+  background-color: #26C281;
+  color: #fff;
+  border: none;
+}
+
+.research-theme .btn:hover, .research-theme .btn:focus{
+  background-color: #000;
+  color: #fff;
+}
+
+/* =================== ABOUT RESEARCH THEME ======================== */
+#theme{
+  margin-top: 80px;
+}
+
+.theme-label{
+  font-family: 'raleway';
+  font-size: 26px;
+  color: #000;
+}
+
+#theme img{
+  margin: 15px auto;
+}
+
+#theme p{
+  font-family: 'raleway';
+  font-size: 14px;
+}
+
+.other-themes h4{
+  font-family: 'raleway';
+  color: #26C281;
+
+}
+
+.other-theme-label{
+  font-family: 'raleway';
+  font-size: 14px;
+  color: #000;
+}
+
+.other-theme .btn{
+  background-color: #26C281;
+  color: #fff;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.other-theme .btn:hover, .other-theme .btn:focus{
+  background-color: #000;
+}
+
+
+
+/*-========================================= LEADERSHIP PAGE ===================================== */
+#leaders{
+  margin-top: 100px;
+}
 
 .leaders {
   margin: 30px 0;
@@ -292,6 +560,7 @@ footer {
 footer h3{
   font-family: 'raleway';
   margin-bottom: 20px;
+  color: #26C281;
 }
 
 footer p{
