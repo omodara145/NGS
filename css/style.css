@@ -1,7 +1,6 @@
 @font-face { font-family: raleway; src: url('Raleway-Regular.ttf'); }
 body {
   overflow-x: hidden;
-
 }
 
 p {
@@ -118,38 +117,43 @@ h6 {
 }
 
 
-/* Carousel Caption */
-.heading h1{
-    position: absolute;
-    text-align: left;
-    font-family: 'raleway';
-    font-size: 4vw;
-    color: #fff;
-    margin-left: 15%;
-    margin-top: -37%;
+/* ====================== HEADER ============================*/
+
+header {
+  background-image: url('../img/home.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: #ffffff;
+  height: 99vh;
 }
 
-.heading button{
-  height: 4vw;
-  width: 8vw;
-  font-size: 1.5vw;
-  position: absolute;;
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 10px;
+  margin-left: 10%;
+  margin-top: 100px;
+}
+
+header .intro-text .intro-lead-in {
+  font-family: 'raleway';
+  font-size: 3.5vw;
+}
+
+header .btn-primary{
   background-color: #26C281;
-  margin-left: 15%;
-  margin-top: -21%;
+  color: #ffffff;
+  font-family: 'raleway';
   border: none;
 }
 
-.heading button:hover{
-  background-color: #fff;
-  color: #26C281;
-}
-
-
-/* Carousel Control */
-.carousel-control{
-  margin-top: 25%;
-  font-size: 30px;
+header .btn-primary:hover{
+  background-color: #ffffff;
+  color:#000000;
 }
 
 /* SPACING BETWEEN SECTIONS */
@@ -459,7 +463,7 @@ hr{
 
 
 
-/*-========================================= LEADERSHIP PAGE ===================================== */
+/*-============================================ LEADERSHIP PAGE ====================================== */
 #leaders{
   margin-top: 100px;
 }
@@ -547,6 +551,299 @@ hr{
 }
 
 
+/* ========================================= MEMBERSHIP PAGE ================================================= */
+#login-register{
+    margin-top: 80px;
+}
+
+.panel-login {
+	border-color: #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+	color: #26C281;
+	background-color: #fff;
+	border-color: #fff;
+	text-align:center;
+}
+.panel-login>.panel-heading a{
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+	font-size: 15px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+	color: #26C281;
+	font-size: 20px;
+  font-family: 'raleway';
+}
+
+.panel-login>.panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+  color: #26C281;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+.btn-login {
+	background-color: #26C281;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #26C281;
+}
+.btn-login:hover,
+.btn-login:focus {
+	color: #fff;
+	background-color: #000;
+	border-color: #000;
+}
+.forgot-password {
+	text-decoration: none;
+	color: #26C281;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+	text-decoration: none;
+	color: #000;
+}
+
+.btn-register {
+	background-color: #26C281;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border: none;
+}
+
+.btn-register:hover,
+.btn-register:focus {
+	color: #fff;
+	background-color: #000;
+	border:none;
+}
+
+/* Checkbox */
+.checkbox {
+  padding-left: 20px;
+}
+
+.checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+    font-family: 'raleway';
+}
+
+.checkbox label::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      left: 0;
+      margin-left: -20px;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      background-color: #fff;
+      -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+      -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+      transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.checkbox label::after {
+      display: inline-block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 0;
+      margin-left: -20px;
+      padding-left: 3px;
+      padding-top: 1px;
+      font-size: 10px;
+      color: #555555;
+}
+  .checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox input[type="checkbox"]:focus + label::before {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after {
+      font-family: 'FontAwesome';
+      content: "\f00c";
+}
+
+.checkbox input[type="checkbox"]:disabled + label {
+      opacity: 0.65;
+}
+
+.checkbox-success input[type="checkbox"]:checked + label::before {
+        background-color: #26C281;
+        border-color: #26C281;
+}
+
+.checkbox-success input[type="checkbox"]:checked + label::after {
+        color: #fff;
+}
+
+/* Radio */
+.radio {
+  padding-left: 20px;
+}
+
+.radio label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+}
+
+.radio label::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      left: 0;
+      margin-left: -20px;
+      border: 1px solid #cccccc;
+      border-radius: 50%;
+      background-color: #fff;
+      -webkit-transition: border 0.15s ease-in-out;
+      -o-transition: border 0.15s ease-in-out;
+      transition: border 0.15s ease-in-out;
+}
+
+.radio label::after {
+      display: inline-block;
+      position: absolute;
+      content: " ";
+      width: 11px;
+      height: 11px;
+      left: 3px;
+      top: 3px;
+      margin-left: -20px;
+      border-radius: 50%;
+      background-color: #555555;
+      -webkit-transform: scale(0, 0);
+      -ms-transform: scale(0, 0);
+      -o-transform: scale(0, 0);
+      transform: scale(0, 0);
+      -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+      -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+      -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+      transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+}
+
+.radio input[type="radio"] {
+    opacity: 0;
+}
+
+.radio input[type="radio"]:focus + label::before {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
+}
+
+.radio input[type="radio"]:checked + label::after {
+      -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      -o-transform: scale(1, 1);
+      transform: scale(1, 1); \
+}
+
+.radio input[type="radio"]:disabled + label {
+      opacity: 0.65;
+}
+
+.radio input[type="radio"]:disabled + label::before {
+        cursor: not-allowed;
+}
+
+.radio.radio-inline {
+    margin-top: 0;
+}
+
+.form-group button{
+    background-color: #26C281;
+    color: #fff;
+    border: none;
+    font-family: 'raleway';
+}
+
+.form-group button:hover{
+  background-color: #fff;
+  color: #000;
+}
+.form-group input{
+  height: 45px;
+}
+
+.form-group input, .form-group textarea{
+    border-radius: 2px;
+    border-left: 5px solid #26C281;
+}
+
+.form-group input:focus, .form-group textarea:focus{
+  border-color: #26C281;
+}
+
+.form-group select{
+  width: 250px;
+  height: 40px;
+  font-family: 'raleway';
+}
+
+#register-form .form-section{
+  color: #26C281;
+}
+
+.form-group span{
+  margin-right: 20px;
+  font-family: 'raleway';
+  font-size: 14px;
+}
+
+
 /* ====================================== F O O T E R ======================================= */
 footer {
   width: 100%
@@ -598,29 +895,6 @@ footer span{
   color: #fff;
 }
 
-.form-group button{
-    background-color: #26C281;
-    color: #fff;
-    border: none;
-    font-family: 'raleway';
-}
-
-.form-group button:hover{
-  background-color: #fff;
-  color: #000;
-}
-.form-group input{
-  height: 45px;
-}
-
-.form-group input, .form-group textarea{
-    border-radius: 2px;
-    border-left: 5px solid #26C281;
-}
-
-.form-group input:focus, .form-group textarea:focus{
-  border-color: #26C281;
-}
 
 
 ::-moz-selection {
